@@ -1,0 +1,26 @@
+.box {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+    transition: all 2s ease-in;
+}
+
+.aqua {
+    background-color: aquamarine;
+}
+
+.green {
+    background-color: green;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.trans-width:hover {
+    width: 300px;
+}
+
+.trans-height:hover {
+    height: 300px;
+}
