@@ -2,7 +2,7 @@
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0px;
-    max-width: 480px;
+    width: 100%;
 }
 
 header {
@@ -10,5 +10,46 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 70vh;
+    height: 90vh;
+}
+
+h1 {
+    font-size: 4.2em;
+    color: #007bff;
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 100px;
+}
+
+hr {
+    background-color: #007bff;
+    width: 100px;
+}
+
+.under-title {
+    font-size: 1.2em;
+    text-align: center;
+    color: #333;
+}
+
+.header-button {
+    color: #333;
+    border: solid 1px #007bff;
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    background-color: #007bff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 15px 0px;
+    margin-top: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
