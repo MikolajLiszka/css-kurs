@@ -1,31 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
     <header>
-        <h1>FRONT END <br> DEVELOPER</h1>
+        <h1>FRONT END DEVELOPER</h1>
+        <hr>
         <p>HTML CSS JavaScript</p>
         <button>DOWIEDZ SIĘ WIĘCEJ</button>
-        <nav>
-            <ul>
-                <li>Menu</li>
-            </ul>
-        </nav>
     </header>
-    <article>
+    <nav>
+        <ul>
+            <li><a href="#o-mnie">O MNIE</a></li>
+            <li><a href="#portfolio">PORTFOLIO</a></li>
+            <li><a href="#kontakt">KONTAKT</a></li>
+        </ul>
+    </nav>
+    <section id="o-mnie">
         <h2>O MNIE</h2>
         <img src="about.jpg" alt="">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla fugit odio, velit expedita optio maiores. Hic.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quidem molestiae consectetur facere dicta sequi, aperiam a est hic cumque.</p>
         <button>MOJE PORTFOLIO</button>
-    </article>
-    <section>
+    </section>
+    <section id="portfolio">
         <h2>PORTFOLIO</h2>
         <img src="photo-1" alt="">
         <img src="photo-2" alt="">
@@ -40,7 +47,7 @@
         <img src="photo-11" alt="">
         <img src="photo-12" alt="">
     </section>
-    <section>
+    <section id="kontakt">
         <h2>KONTAKT</h2>
         <form action="">
             <label for="">Imię</label>
