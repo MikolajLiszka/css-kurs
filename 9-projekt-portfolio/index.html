@@ -1,68 +1,99 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="header">
-            <h1>FRONT END DEVELOPER</h1>
-            <hr>
-            <h2 class="under-title">HTML CSS JavaScript</h2>
-            <button class="header-button">DOWIEDZ SIĘ WIĘCEJ</button>
+      <div class="header">
+        <h1>FRONT END DEVELOPER</h1>
+        <hr>
+        <p class="under-paragraf">HTML <span>•</span> CSS <span>•</span> JavaScript</p>
+        <div class="btn btn-header">
+          <button class="btn-content">DOWIEDZ SIĘ WIĘCEJ</button>
         </div>
+      </div>
     </header>
-    <nav>
-        <ul class="nav-list">
-            <li class="nav-content"><a href="#o-mnie">O MNIE</a></li>
-            <li class="nav-content"><a href="#portfolio">PORTFOLIO</a></li>
-            <li class="nav-content"><a href="#kontakt">KONTAKT</a></li>
-        </ul>
+    <nav class="main-nav">
+      <label for="drop-nav">Menu</label>
+      <input type="checkbox" id="drop-nav">
+      <ul class="nav-list">
+        <li class="nav-content"><a href="#o-mnie">O MNIE</a></li>
+        <li class="nav-content"><a href="#portfolio">PORTFOLIO</a></li>
+        <li class="nav-content"><a href="#kontakt">KONTAKT</a></li>
+      </ul>
     </nav>
-    <section id="o-mnie">
-        <h2>O MNIE</h2>
-        <img src="about.jpg" alt="">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla fugit odio, velit expedita optio maiores. Hic.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quidem molestiae consectetur facere dicta sequi, aperiam a est hic cumque.</p>
-        <button>MOJE PORTFOLIO</button>
+    <section id="about-me">
+      <h2>O MNIE</h2>
+      <hr>
+      <div class="about-me-content">
+        <img class="img-about-me" src="img/about.jpg" alt="" />
+      </div>
+      <p class="about-me-text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla fugit
+        odio, velit expedita optio maiores. Hic. Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Ex laudantium repellendus est dolorem
+        error. Numquam. Lorem ipsum dolor sit, amet consectetur adipisicing.
+      </p>
+      <p class="about-me-text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quidem
+        molestiae consectetur facere dicta sequi, aperiam a est hic cumque.
+      </p>
+      <div class="btn btn-portfolio"><button class="btn-content">MOJE PORTFOLIO</button></div>
     </section>
     <section id="portfolio">
-        <h2>PORTFOLIO</h2>
-        <img src="photo-1" alt="">
-        <img src="photo-2" alt="">
-        <img src="photo-3" alt="">
-        <img src="photo-4" alt="">
-        <img src="photo-5" alt="">
-        <img src="photo-6" alt="">
-        <img src="photo-7" alt="">
-        <img src="photo-8" alt="">
-        <img src="photo-9" alt="">
-        <img src="photo-10" alt="">
-        <img src="photo-11" alt="">
-        <img src="photo-12" alt="">
+      <h2>PORTFOLIO</h2>
+      <hr>
+      <img class="img-portfolio" src="img/portfolio/photo-1.jpg" alt="" />
+      <img class="img-portfolio" src="img/portfolio/photo-2.jpg" alt="" />
+      <img class="img-portfolio" src="img/portfolio/photo-3.jpg" alt="" />
+      <img class="img-portfolio" src="img/portfolio/photo-4.jpg" alt="" />
+      <img class="img-portfolio" src="img/portfolio/photo-5.jpg" alt="" />
+      <img class="img-portfolio" src="img/portfolio/photo-6.jpg" alt="" />
+      <img class="img-portfolio" src="img/portfolio/photo-7.jpg" alt="" />
+      <img class="img-portfolio" src="img/portfolio/photo-8.jpg" alt="" />
+      <img class="img-portfolio" src="img/portfolio/photo-9.jpg" alt="" />
+      <img class="img-portfolio" src="img/portfolio/photo-10.jpg" alt="" />
+      <img class="img-portfolio" src="img/portfolio/photo-11.jpg" alt="" />
+      <img class="img-portfolio" src="img/portfolio/photo-12.jpg" alt="" />
     </section>
     <section id="kontakt">
-        <h2>KONTAKT</h2>
+      <h2>KONTAKT</h2>
+      <hr>
+      <div class="form">
         <form action="">
-            <label for="">Imię</label>
-            <input type="text">
-            <label for="">Email</label>
-            <input type="email" name="" id="">
-            <label for="">Wiadomość</label>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <div class="name-form"><input placeholder="Imię" id="name" type="text" /></div>
+            <div class="mail-form"><input placeholder="Email" type="email" name="email" id="email" /></div>
+          <textarea
+            placeholder="Wiadomość"
+            name="text"
+            id="text"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <div class="btn">
+            <button class="btn-content" type="submit">WYŚLIJ WIADOMOŚĆ</button>
+          </div>
         </form>
+      </div>
+      <div class="social-links">
+        <a href="" class="social-link"><i class="fa-brands fa-facebook-square"></i></a>
+        <a href="" class="social-link"><i class="fa-brands fa-twitter"></i></a>
+        <a href="" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+        <a href="" class="social-link"><i class="fa-brands fa-youtube"></i></a>
+      </div>
     </section>
     <footer>
-        <p>Copyright Akademia 108 - Szkoła Programowania</p>
+      <p>Copyright Akademia 108 - Szkoła Programowania</p>
     </footer>
-    
-</body>
+  </body>
 </html>

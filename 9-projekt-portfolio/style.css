@@ -1,55 +1,240 @@
-
 body {
-    font-family: 'Open Sans', sans-serif;
-    margin: 0px;
-    width: 100%;
+  font-family: "Open Sans", sans-serif;
+  margin: 0px;
+  width: 100%;
 }
 
 header {
-    background-image: url(img/header.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 90vh;
+  background-image: url(img/header.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+}
+
+.header {
+  padding-top: 100px;
 }
 
 h1 {
-    font-size: 4.2em;
-    color: #007bff;
-    text-align: center;
-    margin-top: 0px;
-    padding-top: 100px;
+  font-size: 4.2em;
+  color: #007bff;
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 100px;
+}
+
+h2 {
+  font-size: 1.9em;
+  color: #333;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.under-paragraf {
+  font-size: 1.3em;
+  display: flex;
+  justify-content: center;
+  color: #333;
+}
+
+span {
+  color: #007bff;
+  margin: 0px 10px;
 }
 
 hr {
-    background-color: #007bff;
-    width: 100px;
+  background-color: #007bff;
+  width: 100px;
 }
 
 .under-title {
-    font-size: 1.2em;
-    text-align: center;
-    color: #333;
+  font-size: 1.2em;
+  text-align: center;
+  color: #333;
 }
 
-.header-button {
-    color: #333;
-    border: solid 1px #007bff;
-    text-align: center;
-    padding: 10px;
+.btn-content {
+  color: #333;
+  border: solid 1px #007bff;
+  text-align: center;
+  padding: 10px;
+}
+
+.btn {
+  margin-right: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+label[for="drop-nav"] {
+  display: block;
+  padding: 14px 20px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  text-align: right;
+  cursor: pointer;
+}
+
+#drop-nav {
+  display: none;
+}
+
+#drop-nav:checked + .nav-list {
+  display: block;
+}
+
+.nav-list {
+  padding: 0px;
 }
 
 nav ul {
-    list-style: none;
-    background-color: #007bff;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 15px 0px;
-    margin-top: 0px;
+  display: none;
+  margin: 0px;
+}
+
+nav ul li {
+  display: block;
+  text-align: right;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 15px 0px;
+  margin-top: 0px;
+}
+
+nav {
+  background-color: #007bff;
 }
 
 a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
+}
+
+.about-me-content {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.img-about-me {
+  border-radius: 50%;
+  width: 50%;
+}
+
+.about-me-text {
+  text-align: center;
+  color: #777;
+  width: 95%;
+  margin: 30px auto;
+}
+
+#portfolio {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f1ed;
+}
+
+.btn-portfolio {
+  margin-bottom: 100px;
+}
+
+.img-portfolio {
+  box-sizing: border-box;
+  flex-basis: 100%;
+}
+
+.form {
+  width: 95%;
+  margin: 0 auto;
+}
+
+form {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+input[type="text"],
+input[type="email"] {
+  border: 1px solid #777;
+  padding: 10px;
+  margin-bottom: 25px;
+}
+
+textarea {
+  border: 1px solid #777;
+  margin-bottom: 25px;
+  padding: 10px;
+}
+
+.social-links {
+  margin-top: 75px;
+  text-align: center;
+}
+
+footer {
+  background-color: #f2f1ed;
+  margin-bottom: 0px;
+  padding: 50px 0px;
+  text-align: center;
+}
+
+@media all and (min-width: 481px) {
+  
+  label[for="drop-nav"] {
+    display: none;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 15px 0px;
+    margin-top: 0px;
+  }
+
+  nav ul li {
+    margin: 0px 20px;
+  }
+
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .name-form {
+    width: 48%;
+  }
+
+  .mail-form {
+    width: 48%;
+  }
+
+  textarea {
+    width: 95%;
+  }
+
+}
+
+@media all and (min-width: 768px) {
+
+  .about-me-content {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .about-me-text {
+    width: 768px;
+  }
+
+
 }
