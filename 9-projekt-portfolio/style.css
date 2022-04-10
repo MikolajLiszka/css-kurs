@@ -22,6 +22,7 @@ h1 {
   text-align: center;
   margin-top: 0px;
   padding-top: 100px;
+  margin-bottom: 0px;
 }
 
 h2 {
@@ -44,8 +45,12 @@ span {
 }
 
 hr {
-  background-color: #007bff;
+  border-top: 1px solid #007bff;
   width: 100px;
+}
+
+.hr {
+  margin-bottom: 50px;
 }
 
 .under-title {
@@ -61,10 +66,15 @@ hr {
   padding: 10px;
 }
 
+.btn-white {
+  background-color: #fff;
+}
+
 .btn {
   margin-right: 0px;
   display: flex;
   justify-content: center;
+  cursor: pointer;
 }
 
 label[for="drop-nav"] {
@@ -137,14 +147,20 @@ a {
   display: flex;
   flex-direction: column;
   background-color: #f2f1ed;
+  padding-bottom: 100px;
 }
 
 .btn-portfolio {
   margin-bottom: 100px;
 }
 
-.img-portfolio {
+.container {
+  display: flex;
+  flex-direction: column;
   box-sizing: border-box;
+}
+
+.img-potfolio {
   flex-basis: 100%;
 }
 
@@ -165,6 +181,7 @@ input[type="email"] {
   border: 1px solid #777;
   padding: 10px;
   margin-bottom: 25px;
+  width: 95%;
 }
 
 textarea {
@@ -211,13 +228,13 @@ footer {
     flex-wrap: wrap;
   }
 
-  .name-form {
-    width: 48%;
-  }
-
-  .mail-form {
-    width: 48%;
-  }
+  input[type="text"],
+  input[type="email"] {
+  border: 1px solid #777;
+  padding: 10px;
+  margin-bottom: 25px;
+  width: 45%;
+}
 
   textarea {
     width: 95%;
@@ -236,5 +253,44 @@ footer {
     width: 768px;
   }
 
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 768px;
+    margin: 0 auto;
+  }
 
+  .img-portfolio {
+    width: 384px;
+  }
+
+  .form {
+    width: 768px;
+  }
+
+}
+
+@media all and (min-width: 992px) {
+
+  .about-me-content {
+    width: 992px;
+  }
+
+  .about-me-text {
+    width: 992px;
+  }
+
+  .container {
+    width: 992px;
+  }
+
+  .img-portfolio {
+    width: 248px;
+  }
+
+  .form {
+    width: 992px;
+  }
+
+}
 }
